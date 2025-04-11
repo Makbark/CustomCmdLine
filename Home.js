@@ -31,6 +31,10 @@ class Home {
         await FileHandler.mkdir(fn);
         this.prompt();
         break;
+      case `rmdir`:
+        await FileHandler.rmdir(fn);
+        this.prompt();
+        break;
       case "ext":
         rl.close();
         break;
